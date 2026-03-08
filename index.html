@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saenchai | Muay Thai</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+background:#0a0a0a;
+color:#e4e4e4;
+font-family:Arial;
+}
+
+/* BOTÃO MENU */
+
+.menu-btn{
+position:fixed;
+top:20px;
+left:20px;
+font-size:32px;
+color:white;
+cursor:pointer;
+z-index:1000;
+}
+
+/* MENU LATERAL */
+
+.sidebar{
+position:fixed;
+left:-260px;
+top:0;
+width:260px;
+height:100%;
+background:#111;
+padding-top:60px;
+transition:0.3s;
+}
+
+.sidebar a{
+display:block;
+color:white;
+text-decoration:none;
+padding:15px 25px;
+border-bottom:1px solid #222;
+cursor:pointer;
+}
+
+.sidebar a:hover{
+background:#1c1c1c;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),
+url(images/saenchai.jpg);
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero h1{
+font-family:'Cinzel';
+font-size:70px;
+letter-spacing:4px;
+}
+
+/* SEÇÕES */
+
+section{
+padding:70px 15%;
+display:none;
+}
+
+section.active{
+display:block;
+}
+
+h2{
+font-family:'Cinzel';
+color:#ff3b3b;
+font-size:34px;
+margin-bottom:25px;
+}
+
+p{
+line-height:1.7;
+margin-bottom:16px;
+}
+
+img{
+width:100%;
+margin:30px 0;
+border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:50px;
+background:#070707;
+}
+
+.nome{
+font-family:'Great Vibes', cursive;
+font-size:40px;
+color:#d4af37;
+animation:brilho 3s infinite alternate;
+}
+
+@keyframes brilho{
+0%{text-shadow:0 0 5px #b8962e;}
+50%{text-shadow:0 0 20px #ffd700;}
+100%{text-shadow:0 0 5px #b8962e;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<div class="sidebar" id="menu">
+
+<a onclick="mostrar('quem')">Quem é Saenchai</a>
+<a onclick="mostrar('estilo')">Estilo de luta</a>
+<a onclick="mostrar('feitos')">Feitos históricos</a>
+<a onclick="mostrar('curiosidades')">Curiosidades</a>
+
+</div>
+
+<div class="hero">
+<h1>SAENCHAI</h1>
+</div>
+
+<section id="quem" class="active">
+
+<h2>Quem é Saenchai</h2>
+
+<p>Saenchai é considerado um dos lutadores mais técnicos da história do Muay Thai.</p>
+<p>Ele nasceu na Tailândia e começou a lutar ainda muito jovem.</p>
+<p>Como muitos atletas do país, ele iniciou sua carreira no Muay Thai ainda criança.</p>
+<p>Seu talento rapidamente chamou atenção no cenário nacional.</p>
+<p>Com o passar dos anos ele se tornou um dos lutadores mais respeitados do esporte.</p>
+
+<img src="images/saenchai1.jpg">
+
+<p>Uma das características mais impressionantes de Saenchai é sua criatividade.</p>
+<p>Enquanto muitos lutadores seguem padrões tradicionais, ele usa movimentos inesperados.</p>
+<p>Isso torna suas lutas imprevisíveis e emocionantes.</p>
+<p>Ele também ficou famoso por lutar contra adversários maiores.</p>
+<p>Mesmo enfrentando lutadores mais pesados, frequentemente conseguia vencer.</p>
+
+<p>Sua velocidade e inteligência dentro do ringue fazem dele um verdadeiro mestre do Muay Thai.</p>
+
+</section>
+
+<section id="estilo">
+
+<h2>Estilo de luta</h2>
+
+<p>O estilo de luta de Saenchai é extremamente técnico.</p>
+<p>Ele combina velocidade, estratégia e criatividade.</p>
+
+<img src="images/saenchai2.jpg">
+
+<p>Uma das principais características é sua movimentação leve.</p>
+<p>Ele raramente fica parado durante a luta.</p>
+<p>Isso dificulta muito que o adversário consiga acertar golpes.</p>
+
+<p>Saenchai também usa muitas fintas.</p>
+<p>Essas fintas confundem o oponente e abrem espaço para ataques rápidos.</p>
+
+<p>Seu famoso cartwheel kick é um dos movimentos mais conhecidos do Muay Thai moderno.</p>
+
+</section>
+
+<section id="feitos">
+
+<h2>Feitos históricos</h2>
+
+<p>Durante sua carreira Saenchai conquistou diversos títulos importantes.</p>
+<p>Ele ganhou cinturões em diferentes categorias.</p>
+
+<img src="images/saenchai3.jpg">
+
+<p>Mesmo sendo menor que muitos adversários, venceu lutas impressionantes.</p>
+<p>Isso ajudou a construir sua reputação como um dos maiores lutadores da história.</p>
+
+<p>Ele também participou de eventos internacionais.</p>
+<p>Suas lutas são assistidas por fãs do mundo inteiro.</p>
+
+</section>
+
+<section id="curiosidades">
+
+<h2>Curiosidades</h2>
+
+<p>Saenchai começou a lutar ainda criança.</p>
+<p>Ele acumulou centenas de lutas profissionais.</p>
+
+<img src="images/saenchai4.png">
+
+<p>Hoje ele também ensina técnicas para novos lutadores.</p>
+<p>Muitos atletas jovens se inspiram em seu estilo.</p>
+
+<p>Seu legado continua influenciando o Muay Thai moderno.</p>
+
+</section>
+
+<footer>
+
+<p>Site desenvolvido por um jovem programador e amante do Muay Thai</p>
+
+<div class="nome">
+Miguel Moreira
+</div>
+
+</footer>
+
+<script>
+
+function toggleMenu(){
+let menu = document.getElementById("menu")
+
+if(menu.style.left === "0px"){
+menu.style.left = "-260px"
+}else{
+menu.style.left = "0px"
+}
+}
+
+function mostrar(secao){
+
+document.querySelectorAll("section").forEach(s=>{
+s.classList.remove("active")
+})
+
+document.getElementById(secao).classList.add("active")
+
+document.getElementById("menu").style.left="-260px"
+
+}
+
+</script>
+
+</body>
+</html>
